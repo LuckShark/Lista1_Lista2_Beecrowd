@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var [A, B, C] = prompt('Digite 3 valores inteiros: ').split(' ');
+        A = parseInt(A);
+        B = parseInt(B);
+        C = parseInt(C);
+
+        var min = Number;
+        var mid = Number;
+        var max = Number;
+
+        if (A<B && A<C){
+            min = A;
+            if (B<C){
+                mid = B;
+                max = C;
+            } else {
+                mid = C;
+                max = B;
+            }
+        } else if (B<A && B<C) {
+            min = B;
+            if(A<C){
+                mid = A;
+                max = C;
+            } else {
+                mid = C;
+                max = A;
+            }
+        } else {
+            min = C;
+            if (A<B){
+                mid = A;
+                max = B;
+            } else {
+                mid = B;
+                max = A;
+            }
+        }
+
+        console.log(min);
+        console.log(mid);
+        console.log(max);
+
+        console.log(' ')
+        console.log(A);
+        console.log(B);
+        console.log(C);
+
+        /*
+        if (A<B && B<C) { //C < B < A  
+            console.log(C);
+            console.log(B);
+            console.log(A);
+        } else if (A<C && C<B){ // A < C < B
+            console.log(A);
+            console.log(C);
+            console.log(B);
+        } else if (C<A && A<B) { // C < A < B
+            console.log(C);
+            console.log(A);
+            console.log(B);
+        } else if (B<C && C<A) { // B < C < A
+            console.log(B);
+            console.log(C);
+            console.log(A);
+        } else if (B<A && A<C) { // B < A < C
+            console.log(B);
+            console.log(A);
+            console.log(C);
+        } else {
+            console.log(A);
+            console.log(B);
+            console.log(C);
+        }
+        */
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var [A, B] = prompt('Digite o código e a quantidade: ').split(' ');
+        A = parseInt(A);
+        B = parseInt(B);
+
+
+        if (A==3) {
+                B = (B*5);
+                console.log('Total: R$ '+B.toFixed(2));
+            } else if (A==1) {
+                B = (B*4);
+                console.log('Total: R$ '+B.toFixed(2));
+            } else if (A==2) {
+                B = (B*4.50)
+                console.log('Total: R$ '+B.toFixed(2));
+            } else if (A==4) {
+                B = (B*2)
+                console.log('Total: R$ '+B.toFixed(2));
+            } else {
+                B = (B*1.50)
+                console.log('Total: R$ '+B.toFixed(2));
+            }
+    
+    </script>
+</body>
+</html>

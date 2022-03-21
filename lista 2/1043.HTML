@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var[A, B, C] = prompt('Digite 3 valores reais').split(' ');
+        A = Number(A);
+        B = Number(B);
+        C = Number(C);
+        
+        
+        /*
+        if (B-C<A && A<B+C || A-C<B && B<A+C || A-B<C && C<A+B) {
+            var P = (A+B+C);
+            console.log('Perimetro = '+P.toFixed(1));
+        } else {
+            var T = (A+B)*C/2
+            console.log('Area = '+T.toFixed(1));
+        }
+        */
+       //Essa aqui foi aceita:
+        if ((A<B+C) && (B<A+C) && (C<A+B)) {
+        var P = (A+B+C);
+        console.log('Perimetro = '+P.toFixed(1));
+        } else {
+        var T = (A+B)*C/2;
+        console.log('Area = '+T.toFixed(1));
+        }
+
+    </script>
+</body>
+</html>

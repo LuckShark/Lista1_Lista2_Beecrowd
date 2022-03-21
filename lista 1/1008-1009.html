@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+Escreva um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+
+Entrada
+O arquivo de entrada contém 2 números inteiros e 1 número com duas casas decimais, representando o número, quantidade de horas trabalhadas e o valor que o funcionário recebe por hora trabalhada, respectivamente.
+
+Saída
+Imprima o número e o salário do funcionário, conforme exemplo fornecido, com um espaço em branco antes e depois da igualdade. No caso do salário, também deve haver um espaço em branco após o $.
+
+        var A = Number(prompt('Digite o seu numero: '));
+        var B = Number(prompt('Digite suas horas trabalhadas: '));
+        var C = Number(prompt('Digite o valor de sua hora: '));
+
+        var D = B*C
+
+        console.log('NUMBER = '+A);
+        console.log('SALARY = U$ '+D.toFixed(2));
+    -->
+    <script>
+        var A = prompt('Digite o seu nome: ');
+        var B = Number(prompt('Digite seu salário fixo: '));
+        var C = Number(prompt('Digite o total de vendas: '));
+
+        var D = (B + C*0.15);
+
+        console.log('TOTAL = R$ '+D.toFixed(2));
+
+
+    </script>
+
+    
+</body>
+</html>

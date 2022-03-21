@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var [hi, mi, hf, mf] = prompt('Digite a H e M de início e H e M do fim:').split(' ');
+        hi = parseInt(hi);
+        mi = parseInt(mi);
+        hf = parseInt(hf);
+        mf = parseInt(mf);
+
+       if (hf>hi && mf>mi) {
+           var hora = (hf-hi);
+           var minuto = (mf-mi);
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else if (hf>hi && mf<mi) {
+           var hora = (hf-hi) - 1;
+           var minuto = (mf-mi) + 60;
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else if (hf==hi && mf<mi) {
+           var hora = 23;
+           var minuto = (mf-mi) + 60;
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else if (hf==hi && mf>mi) {
+           var hora = 0;
+           var minuto = (mf-mi);
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else if (hf>hi && mf==mi) {
+           var hora = (hf-hi);
+           var minuto = 0;
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else if (hf<hi && mf==mi) {
+           var hora = (hf-hi) + 24;
+           var minuto = 0;
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else if(hf<hi && mf>mi) {
+           var hora = (hf-hi) + 24;
+           var minuto = (mf-mi);
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else if(hf<hi && mf<mi) {
+           var hora = (hf-hi) + 23; //é 23 por que já tem 60(1h) aí embaixo
+           var minuto = (mf-mi) +60; //aqui está a 1h 
+           console.log('O JOGO DUROU '+hora+' HORA(S) E '+minuto+' MINUTO(S)');
+       } else {
+        console.log('O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)');
+       }
+
+       
+
+    </script>
+</body>
+</html>

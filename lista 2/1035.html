@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Não esquecer: var prompt = function(texto) { return lines.shift();};
+        
+Leia 4 valores inteiros A, B, C e D. A seguir, se B for maior do que C e se D for maior do que A, e a soma de C com D for maior que a soma de A e B e se C e D, ambos, forem positivos e se a variável A for par escrever a mensagem "Valores aceitos", senão escrever "Valores nao aceitos".
+
+Entrada
+Quatro números inteiros A, B, C e D.
+
+Saída
+Mostre a respectiva mensagem após a validação dos valores.
+    -->
+    <script>
+        var [A, B, C, D] = prompt('Digite o valores: ').split(' ');
+        A = parseInt(A);
+        B = parseInt(B);
+        C = parseInt(C);
+        D = parseInt(D);
+
+        if (B > C && D > A && C+D > A+B && C > 0 && D > 0 && A%2 === 0) {
+        console.log('Valores aceitos');
+        } else {
+        console.log('Valores nao aceitos');
+        }
+
+    </script>
+</body>
+</html>

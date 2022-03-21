@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var [A, B] = prompt('Digite o início e o fim do jogo').split(' ');
+        A = parseInt(A);
+        B = parseInt(B);
+
+        if (A == B) {
+            console.log('O JOGO DUROU 24 HORA(S)')
+        }
+        if (A>B) {
+            var tempo1 = (24 - A) + B
+            console.log('O JOGO DUROU '+tempo1+' HORA(S)')
+        }  
+        if (A<B){
+            var tempo2 = (B-A)
+            console.log('O JOGO DUROU '+tempo2+' HORA(S)')
+        }
+
+    </script>
+    
+</body>
+</html>

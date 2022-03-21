@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var A = prompt('Vertebrado ou invertebrado?');
+        var B = prompt('Escolha um grupo');
+        var C = prompt('Tipo de Dieta');
+
+        if (A =='vertebrado') {
+            if (B=='ave') {
+                if (C=='carnivoro'){
+                    console.log('aguia')
+                } else {
+                    console.log('pomba')
+                }
+            } else { // mamífero
+                if (C=='onivoro') {
+                    console.log('homem')
+                } else {
+                    console.log('vaca')
+                }
+            }
+        } else {
+            if (B=='inseto') {
+                if (C=='hematofago') {
+                    console.log('pulga');
+                } else {
+                    console.log('lagarta');
+                }
+            } else {
+                if (C=='hematofago') {
+                    console.log('sanguessuga');
+                } else {
+                    console.log('minhoca')
+                }
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

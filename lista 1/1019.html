@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var N = parseInt(prompt('Digite o número em segundos: '));
+
+        var H = parseInt(N/3600);
+        N = (N%3600);
+
+        var M = parseInt(N/60);
+        N = (N%60);
+
+        var S = parseInt(N);
+
+        console.log(H+':'+M+':'+S);
+
+    </script>
+</body>
+</html>

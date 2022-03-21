@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var [a, b, c] = prompt('Digite 3 valores inteiros: ').split(' ');
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = parseFloat(c);
+
+        if (a >= (b+c) || b >= (a+c) || c >= (a+b)) {
+            console.log('NAO FORMA TRIANGULO');
+        } else if (a*a == (b*b + c*c) || b*b == (a*a + c*c) || c*c == (a*a + b*b)) {
+            console.log('TRIANGULO RETANGULO');
+        } else if (a*a > (b*b + c*c) || b*b > (a*a + c*c) || c*c > (a*a + b*b)) {
+            console.log('TRIANGULO OBTUSANGULO');
+        } else if (a**2 <(b**2 + c**2) || b**2 < (a**2 + c**2) || c**2 < (a**2 + b**2)) {
+            console.log('TRIANGULO ACUTANGULO')
+        } 
+        if (a==b && a==c) {
+            console.log('TRIANGULO EQUILATERO');
+        } 
+        if ((a==b && a!=c) || (a==c && a!=b) || (b==c && b!=a)) {
+            console.log('TRIANGULO ISOCELES')
+        }
+
+        /*
+        var min = Number;
+        var mid = Number;
+        var max = Number;
+
+        if (A<B && A<C){
+            min = A;
+            if (B<C){
+                mid = B;
+                max = C;
+            } else {
+                mid = C;
+                max = B;
+            }
+        } else if (B<A && B<C) {
+            min = B;
+            if(A<=C){
+                mid = A;
+                max = C;
+            } else {
+                mid = C;
+                max = A;
+            }
+        } else if (C<A && C<B) {
+            min = C;
+            if (A<B){
+                mid = A;
+                max = B;
+            } else {
+                mid = B;
+                max = A;
+            }
+        } else if (A==B && A>C) {
+            max = A;
+            mid = B;
+            min = C;
+        } else if (A==C && A>B) {
+            max = A;
+            mid = C;
+            min = B;
+        } else if (B==C && B>A) {
+            max = B;
+            mid = C;
+            min = A;
+        } else if (A==B && A<C) {
+            max = C;
+            mid = A;
+            min = B;
+        } else if (A==C && A<B) {
+            max = B;
+            mid = A;
+            min = C;
+        } else {
+            max = A;
+            mid = B;
+            min = C;
+        }
+
+        if (max >= mid + min) {
+            console.log('NAO FORMA TRIANGULO');
+        }
+        if (max**2 == mid**2 + min**2) {
+            console.log('TRIANGULO RETANGULO');
+        }
+        if (max**2 > mid**2 + min**2) {
+            console.log('TRIANGULO OBTUSANGULO');
+        }
+        if (max**2 < mid**2 + min**2) {
+            console.log('TRIANGULO ACUTANGULO');
+        }
+        if (max==mid && max==min) {
+            console.log('TRIANGULO EQUILATERO');
+        }
+        if ((max==mid && max != min) || (mid==min && mid != max) || (max==min && max != mid)) {
+            console.log('TRIANGULO ISOSCELES');
+        }
+
+        console.log(max+' '+mid+' '+min)
+        */
+    </script>
+</body>
+</html>
