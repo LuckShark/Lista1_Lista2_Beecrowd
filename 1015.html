@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var [X1, Y1] = prompt('Digite dois valores de P1').split(' ')
+        var [X2, Y2] = prompt('Digite dois valores de P2').split(' ')
+
+        X1 = Number(X1)
+        Y1 = Number(Y1)
+        X2 = Number(X2)
+        Y2 = Number(Y2)
+
+        var resultado = Math.sqrt((X2-X1)**2 + (Y2-Y1)**2);
+
+        console.log(resultado.toFixed(4))
+
+    </script>
+</body>
+</html>
