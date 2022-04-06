@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contador = 0;
+        var aprovados = 0;
+        while (contador<50){ //OBS: SE FOR TESTAR, DIMINUIR NÚMERO 
+            contador+=1; // ou então cont++
+            var A = Number(prompt(`(Aluno nº${contador}) - Digite sua nota:`));
+            if (A>=6) {
+                aprovados++
+            }
+        }
+        console.log(`Dos ${contador} alunos analisados, ${aprovados} foram aprovados`);
+    </script>
+</body>
+</html>
