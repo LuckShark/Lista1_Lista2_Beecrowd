@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-april</title>
+</head>
+<body>
+    <script>
+        /*
+        var A = prompt('Digite o valor de A:')
+        var B = prompt('Digite o valor de B:')
+        var C = prompt('Digite o valor de C:')
+        console.log(`O conteúdo de A é ${A}, o de B é ${B} e o C é ${C}`)
+        var Opa = C
+        C = B
+        B = A
+        A = Opa 
+        console.log(`O conteúdo de A é ${A}, o de B é ${B} e o C é ${C}`)
+        */
+       
+       var N = Number(prompt('Quantos valores serão lidos? '))
+       var soma = 0
+
+       for(var cont=1; cont<=N;cont++){
+           var A = Number(prompt(`digite o valor nº${cont}`))
+           if (A%2==0){
+            soma += A
+           }
+       }
+       console.log(`A soma dos pares dos ${N} números é ${soma}`)
+       
+    </script>
+</body>
+</html>
