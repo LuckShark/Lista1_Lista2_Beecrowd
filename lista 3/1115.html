@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while (true){
+            var [X, Y] = prompt('Digite as coordenadas: ').split(' ').map(Number)
+            if (X==0 || Y==0){
+                break;
+            }
+            if (X<0 && Y<0){ //x- y-
+                console.log('terceiro')
+            }
+            if (X<0 && Y>0){ //x- y+
+                console.log('segundo')
+            }
+            if (X>0 && Y<0){ //x+ y-
+                console.log('quarto')
+            }
+            if (X>0 && Y>0){ //x+ y+
+                console.log('primeiro')
+            } 
+        }
+    </script>
+</body>
+</html>
