@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var media = 0;
+        var cont = 1;
+        while(cont <= 2){
+            var nota = Number(prompt('Digite um número válido: '))
+            if (nota>=0 && nota<=10){
+                cont++
+                media = media + nota;
+            }
+            if (nota<0 || nota>10){
+                console.log('nota invalida')
+            }
+        }
+        media = media/2
+        console.log(`media = ${media.toFixed(2)}`)
+        
+    </script>
+</body>
+</html>

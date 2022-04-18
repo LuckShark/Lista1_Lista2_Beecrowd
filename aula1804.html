@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fatorial(valor){
+            if(valor<0) {
+
+            return 'Valor deve ser maior ou igual a zero';
+
+            } else if ( (valor == 0) || (valor == 1) ) {
+
+            return 1;
+
+            } else {
+                var acumula = 1;
+                for(x=valor;x>1;x--) {
+                acumula = acumula * x;
+                }
+                return acumula;
+                } 
+            }
+
+        function conversao (valor){
+            valor = (valor*3.14)/180
+            return valor;
+        }
+
+        var N, y, x, s, cont, termo;
+
+        N = Number(prompt('Digite qtd de termos: '));
+        y = Number(prompt('Informe o angulo '));
+        x = conversao(y)
+        s = 0;
+        termo = 1;
+        for(cont=1;cont<=N;cont++){
+            s = s + termo*Math.pow(x,2*cont-1)/fatorial(2*cont-1); //Math..pow(X,2) calcula tipo X^2
+            termo = (-1)*termo
+        }
+
+        document.write(`o valor do seno de ${y} é ${s}`)
+    
+
+
+
+    </script>
+</body>
+</html>
