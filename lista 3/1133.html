@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var X = Number(prompt('Digite o número 1:'))
+        var Y = Number(prompt('Digite o número 2:'))
+        var cont = 0;
+
+
+        if (Y < X){
+            aux = X
+            X = Y
+            Y = aux
+        }
+        for(cont=X+1; cont<Y;cont++){
+            if(cont%5==2 || cont%5==3){
+                console.log(cont)
+            }
+        }
+
+
+        /*
+        if (X<Y) {
+            
+            for(cont=X; cont<Y;cont++){
+                if(cont%5==2 || cont%5==3){
+                    console.log(cont)
+                }
+            }
+        } else {
+            for(cont=Y; cont<X;cont++){
+                if(cont%5==2 || cont%5==3){
+                    console.log(cont)
+                }
+            }
+        }
+
+        */
+
+    </script>
+</body>
+</html>

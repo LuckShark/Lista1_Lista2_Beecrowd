@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var N = Number(prompt("Digite a quantidade de linhas"))
+
+        cont = 0
+        var a = 1
+        var b = 2
+        var c = 3
+        while(cont<N){
+            console.log(a+' '+b+' '+c+' PUM')
+            c+=2
+            a = c
+            b = c
+            b+=1
+            c+=2
+            cont+=1
+        }
+            
+
+        /*
+        var B = 0;
+        var C = 1;
+        var D = 4;
+
+        for(var cont=0;cont<=N;cont++){
+            for(B=C;B<=D;B++){
+                if(B%4==0){
+                    console.log('PUM');
+                } else {
+                    console.log(B)
+                }
+            }
+            C += 4;
+            D += 4;
+        }
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var A = new Array(5);
+        var somaPar = 0;
+        var umCinco = 0;
+        var somaAll = 0;
+
+        for(var cont=0;cont<5;cont++){
+            A[cont] = parseInt(prompt(`Digite o ${cont+1}º número do vetor:`))
+            var somaAll = somaAll +A[cont]
+
+            if (A[cont]%2==0){
+                somaPar = somaPar + A[cont]
+            }
+            if (A[cont]==5){
+                umCinco = umCinco + 1
+            }
+             
+        }
+        document.write(`vetor lido ${A} <br>`)
+        document.write(`Soma dos pares: ${somaPar}`)
+        document.write(`Quantos cinco(s) o vetor tem: ${umCinco}`)
+        document.write(`Soma de todos os números: ${somaAll}`)
+
+        
+        
+
+        
+
+        //quando trabalhar com vetor, melhor usar o document.write do que o console.log
+
+    </script>
+</body>
+</html>

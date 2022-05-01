@@ -9,26 +9,40 @@
 <body>
     <script>
         var media = 0;
-        var cont = 1;
-        while(cont <= 2){
-            var nota = Number(prompt('Digite um número válido: '));
-            if (nota>=0 && nota<=10){
-                cont++
-                media = media + nota;
-            }
-            if (nota<0 || nota>10){
-                console.log('nota invalida')
-            }
+        var cont1 = 0;
+        var cont2 = 0;
+
+        while (cont2 != 2){
             
-        }
-        media = media/2
-        console.log(`media = ${media.toFixed(2)}`)
-            
-        var newMedia = Number(prompt('novo calculo (1-sim 2-nao)'));
-                if (newMedia==1) {
-                    cont = 1
+
+            while(cont1 != 1){
+                var nota1 = Number(prompt('Digite um número válido: '));
+                
+                if (nota1>=0 && nota1<=10){
+                    cont1++
+                } else{
+                    console.log('nota invalida')
                 }
+            }
+            
+            while(cont1 != 2){
+                var nota2 = Number(prompt('Digite um número válido: '));
+                
+                if (nota2>=0 && nota2<=10){
+                    cont1++
+                    media = (nota1 +nota2)/2
+                    console.log(`media = ${media.toFixed(2)}`)
+                } else{
+                    console.log('nota invalida')
+                }
+            }
+
+            while(cont2<1 || cont2>2){
+                cont2 = Number(prompt('novo calculo (1-sim 2-nao)'))
+                
+            }
         
+        }
         
     </script>
 </body>
