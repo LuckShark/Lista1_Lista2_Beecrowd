@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var n = Number(prompt('Número de pessoas:'))
+    var tentativas, sucesso = [3]
+        for(var i=1;i<=n;i++){
+            var nome = prompt('Nome da pessoa '+i)
+            var [a, b] = prompt('Digite o valores: ').split(' ');
+            a = Number(a);
+            b = Number(b);
+            for(var j=1;j<=3;j++){
+                tentativas[j] = tentativas[j] + a
+                sucesso[j] = sucesso[j] + b
+            }
+        }
+    var fundamentos = ['Saque', 'Bloqueio', 'Ataque'];
+    for(var j=1;j<=3;j++){
+        var pontos = sucesso[j]*100/tentativas[j]
+        console.log('Pontos de '+fundamentos[j]+': '+pontos)
+    }
+    </script>
+</body>
+</html>

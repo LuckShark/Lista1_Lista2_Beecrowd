@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var elementos = new Array(20)
+        var menor
+        var indMenor
+        for (var cont=0;cont<20;cont++){
+            elementos[cont] = Math.trunc(Math.random()*21)
+        }
+        for (var cont2=0;cont2<20;cont2++){
+            if (elementos[cont2]>elementos[cont2+1]){
+                menor = elementos[cont2+1]
+                indMenor = cont2+1
+                
+            } 
+        }
+        console.log(elementos)
+        console.log(`Menor elemento ${menor}`)
+        console.log(`Posição do menor ${indMenor}`)
+        elementos.sort
+        console.log(elementos)
+        
+
+
+
+
+    </script>
+</body>
+</html>

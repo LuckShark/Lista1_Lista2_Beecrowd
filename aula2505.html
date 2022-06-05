@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 3, 5, 7, 9, 11];
+        var aux = 0;
+        var novoNum = Number(prompt('Insira o novo número no vetor'))
+        for(var cont=0;cont<arr.length;cont++){
+            if(novoNum<arr[cont]){
+                aux = arr[cont]
+                arr[cont]=novoNum;
+                novoNum=aux
+                //arr.push(novoNum)
+                arr.splice(cont+1,0,novoNum)
+                break;
+            }
+        }
+        console.log(arr)
+    </script>
+</body>
+</html>

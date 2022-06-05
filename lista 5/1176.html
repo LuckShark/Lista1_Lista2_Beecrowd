@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var i, T;
+    var N = [61]
+    N[0]=0
+    N[1]=1
+    
+    T = Number(prompt('Número de casos:'))
+
+    for(i=2;i<61;i++){
+        N[i]=N[i-1]+N[i-2];
+    }
+    
+    for(i=0;i<T;i++){
+        //console.log('Fib('+i+') ='+N[i])
+    }
+    
+    console.log('Fib('+T+') ='+N[T])
+
+
+
+    </script>
+</body>
+</html>

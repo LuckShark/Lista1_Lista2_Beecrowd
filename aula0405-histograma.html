@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var elementos = []
+        var quantidades = []
+        var aumentador0 = 0
+        var aumentador1 = 0
+        var aumentador2 = 0
+        var aumentador3 = 0
+        var aumentador4 = 0
+        var aumentador5 = 0
+        var aumentador6 = 0
+        var aumentador7 = 0
+        
+        for (cont=0;cont<80;cont++){
+            elementos[cont] = Math.trunc(Math.random()*11)
+        }
+        for(cont=0;cont<80;cont++){
+            if(elementos[cont]==0){
+                aumentador0 += 1
+                quantidades[0] = aumentador0
+            } else if (elementos[cont]==1){
+                aumentador1 += 1
+                quantidades[1] = aumentador1
+            } else if (elementos[cont]==2){
+                aumentador2 += 1
+                quantidades[2] = aumentador2
+            } else if (elementos[cont]==3){
+                aumentador3 += 1
+                quantidades[3] = aumentador3
+            } else if (elementos[cont]==4){
+                aumentador4 += 1
+                quantidades[4] = aumentador4
+            } else if (elementos[cont]==5){
+                aumentador5 += 1
+                quantidades[5] = aumentador5
+            } else if (elementos[cont]==6) {
+                aumentador6 += 1
+                quantidades[6] = aumentador6
+            } else {
+                aumentador7 += 1
+                quantidades[7] = aumentador7
+            }
+        }
+        console.log(elementos)
+        console.log(quantidades)
+        */
+
+        // RESOLUÇÃO DA PROFESSORA ----
+        /*
+       var notas = new Array(80), hist = new Array(11), i , p;
+
+       for(i=0;i<11;i++){
+           hist[i]=0
+       }
+       p=0;
+       while(p<80){
+           notas[p]=Math.trunc(Math.random()*11);
+           p++
+           i=0
+           while(i<11){
+               if(notas[p-1]==i){
+                   hist[i]++;
+                   i=11; // ou seria um break. Quando fica 11, o programa encerra
+               }
+               i++
+           }
+       }
+       for(i=0;i<11;i++){
+           console.log(hist[i]+' notas valor '+i)
+       }
+       */
+
+       var notas = new Array(20), cont1, cont2 = 0
+       var novoNotas = []
+       
+       for (cont1=0;cont1<20;cont1++){
+            notas[cont1] = Math.trunc(Math.random()*100)
+        }
+        notas.sort((a,b) => a-b)
+        
+        console.log(notas)
+        
+        for (cont1=0;cont1<20;cont1++){
+            if (notas[cont1]!=notas[cont1+1]){
+                novoNotas[cont2]=notas[cont1]
+                cont2++
+            }
+        }
+        console.log(novoNotas)
+        
+
+
+
+    </script>
+</body>
+</html>

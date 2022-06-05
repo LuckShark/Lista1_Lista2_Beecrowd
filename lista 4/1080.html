@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var cont1, cont2,maior, posicao;
+    cont2=0;
+    maior=0;
+
+    for(cont1=1;cont1<=100;cont1++){
+        var num = Number(prompt('escreva um número'))
+        if(maior<num){
+            maior=num;
+            posicao=cont1;
+        }
+    }
+    console.log(maior)
+    console.log(posicao)
+    </script>
+</body>
+</html>

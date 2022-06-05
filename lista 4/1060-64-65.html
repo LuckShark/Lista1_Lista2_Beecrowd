@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var cont2 = 0
+        var total = 0
+        for(cont=1;cont<=6;cont++){
+            var A = Number(prompt(`Digite o ${cont}º número:`))
+            if (A>0){
+                cont2++
+                total = total + A
+            }
+        }
+        var newTop = (total/cont2)
+        console.log(`${cont2} valores positivos`)
+        console.log(newTop.toFixed(1))
+        */
+        var cont2 = 0
+        var contImp = 0
+        var contPos = 0
+        var contNeg = 0
+        for(cont=1;cont<=5;cont++){
+            var A = Number(prompt(`Digite o ${cont}º número:`))
+            if (A%2==0){
+                cont2++
+            } else {
+                contImp++
+            }
+            if (A>0){
+                contPos++
+            }
+            if (A<0){
+                contNeg++
+            }
+        }
+        console.log(`${cont2} valor(es) par(es)`)
+        console.log(`${contImp} valor(es) impar(es)`)
+        console.log(`${contPos} valor(es) positivo(s)`)
+        console.log(`${contNeg} valor(es) negativo(s)`)
+    </script>
+</body>
+</html>
